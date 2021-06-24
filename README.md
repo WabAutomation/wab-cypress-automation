@@ -1,4 +1,10 @@
--- Cypress open 
-yarn run cypress open
--- Generate test report
-npm run test:mochawesome
+## Simple steps to run your test
+
+# Run cypress through UI panel
+- `` npm install && yarn``
+- `` yarn run cypress open``
+
+# Run cypress headless and generate report
+
+- ``npm run test:mochawesome``
+
