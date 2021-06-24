@@ -1,0 +1,24 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:run:Test": "cypress run --spec \"cypress/integration/Test/wab.spec.js\" --browser chrome --headless",
+    "cy:run:TestFolder": "cypress run --spec \"cypress/integration/Test/**/*\"",
+    "merge:reports": "mochawesome-merge 'cypress/results/specs/*.json' > cypress/results/mochawesome.json",
+    "generate:report": "marge cypress/results/mochawesome.json --reportDir cypress/results --reportFilename index.html",
+    "test:mochawesome": "npm run cy:run:TestFolder && npm run merge:reports && npm run generate:report"
+  },
+  "author": "Arpat",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.4.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0",
+    "faker": "^4.1.0",
+    "json-server": "^0.15.0"
+  }
+}

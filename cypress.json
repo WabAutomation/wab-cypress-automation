@@ -1,0 +1,22 @@
+{
+    "baseURL":"https://www.cypress.io/how-it-works/",
+    "pageLoadTimeout":15000,
+    "chromeWebSecurity":false,
+    "integrationFolder":"cypress/integration/Test",
+    "viewportWidth":1920,
+    "viewportHeight":1080,
+    "screenshotsFolder": "mochawesome-report/assets",
+    "env":{
+     "gmailSignInUrl":"https://accounts.google.com/o/oauth2/auth/identifier?response_type=code&redirect_uri=https%3A%2F%2Fauth.cypress.io%2Flogin%2Fcallback&scope=email%20profile&state=Situyi-zro2m0QgNg5INTXu0hSKOjWz4&client_id=976680234070-jlotbgdqfah46f34o4oheoqkrng39jn9.apps.googleusercontent.com&flowName=GeneralOAuthFlow"
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "reporterOptions": {
+            "reportDir": "cypress/results/specs",
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
+    }
+}
